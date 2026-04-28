@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Juegos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+            min-height: 100vh;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 40px 0;
+            color: white;
+            font-weight: bold;
+        }
+
+        .card {
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .btn-jugar {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+        }
+
+        .btn-jugar:hover {
+            background-color: #ff3b2e;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="titulo">🎮 Portal de Juegos</h1>
+
+        <div class="row g-4">
+
+            <!-- Sudoku -->
+            <div class="col-md-4">
+                <div class="card text-center p-3">
+                    <h5 class="card-title">🧩 Sudoku</h5>
+                    <p>Ejercita tu mente con números.</p>
+                    <a href="sudoku.html" class="btn btn-jugar">Jugar</a>
+                </div>
+            </div>
+
+            <!-- Sopa de Letras -->
+            <div class="col-md-4">
+                <div class="card text-center p-3">
+                    <h5 class="card-title">🔎 Sopa de Letras</h5>
+                    <p>Encuentra las palabras ocultas.</p>
+                    <a href="sopadeletras.html" class="btn btn-jugar">Jugar</a>
+                </div>
+            </div>
+
+            <!-- Dino Dino -->
+            <div class="col-md-4">
+                <div class="card text-center p-3">
+                    <h5 class="card-title">🦖 Dino Dino</h5>
+                    <p>Salta obstáculos y sobrevive.</p>
+                    <a href="dinodino.html" class="btn btn-jugar">Jugar</a>
+                </div>
+            </div>
+
+            <!-- Cuestionario -->
+            <div class="col-md-6">
+                <div class="card text-center p-3">
+                    <h5 class="card-title">❓ Cuestionario</h5>
+                    <p>Pon a prueba tus conocimientos.</p>
+                    <a href="cuestionario.html" class="btn btn-jugar">Jugar</a>
+                </div>
+            </div>
+
+            <!-- Crucigrama -->
+            <div class="col-md-6">
+                <div class="card text-center p-3">
+                    <h5 class="card-title">✏️ Crucigrama</h5>
+                    <p>Completa las palabras cruzadas.</p>
+                    <a href="crucigrama.html" class="btn btn-jugar">Jugar</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
